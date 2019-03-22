@@ -1,0 +1,63 @@
+<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+    <variable name="time" type="int" shape="time">
+        <attribute name="standard_name" value="time"/>
+        <attribute name="units" value="hours since 2019-3-4 00:00:00"/>
+        <attribute name="calendar" value="proleptic_gregorian"/>
+        <attribute name="axis" value="T"/>
+            <values start="6.0" increment="6"/>
+    </variable>
+    <aggregation dimName="time" type="joinExisting" recheckEvery="1 day">
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f006.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f012.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f018.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f024.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f030.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f036.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f042.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f048.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f054.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f060.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f066.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f072.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f078.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f084.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f090.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f096.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f102.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f108.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f114.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f120.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f126.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f132.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f138.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f144.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f150.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f156.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f162.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f168.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f174.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f180.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f186.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f192.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f198.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f204.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f210.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f216.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f222.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f228.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f234.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f240.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f252.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f264.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f276.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f288.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f300.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f312.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f324.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f336.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f348.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f360.nc"/>
+	    <netcdf location="raw/gfs.t00z.pgrb2.0p25.f372.nc"/>
+        <netcdf location="raw/gfs.t00z.pgrb2.0p25.f384.nc"/>
+    </aggregation>
+</netcdf>
