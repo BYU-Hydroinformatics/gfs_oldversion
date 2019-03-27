@@ -7,7 +7,7 @@ boundaries = {
            'SWE_inst': [0, 121743], 'SoilTMP0_10cm_inst': [232, 319], 'SWdown_f_tavg': [0, 398],
            'SnowDepth_inst': [0, 305], 'Snowf_tavg': [0, 1], 'Swnet_tavg': [0, 347], 'Tveg_tavg': [0, 167],
            'Wind_f_inst': [0, 17]},*/
-    alltimes: {'tp': [0, 224.1]}
+    alltimes: {'tp': [0, 25]}
 }
 
 // old function for setting zoom of the map. ignored because the

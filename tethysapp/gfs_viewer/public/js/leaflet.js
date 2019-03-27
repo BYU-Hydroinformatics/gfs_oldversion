@@ -72,7 +72,7 @@ function newLayer(variable, color) {
     wmsLayer = L.tileLayer.wms(url, {
         layers: variable,
         useCache: true,
-        crossOrigin: true,
+        //crossOrigin: true,
         format: 'image/png',
         transparent: true,
         BGCOLOR:'0x000000',
@@ -113,7 +113,7 @@ function zoomMap(zoomLocation) {
 
 function updateMap() {
     variable = $('#layers').val();
-    time = $("#times").val();
+    time = 'alltimes';              //time = $("#times").val();
     color= $('#colors').val();
     clearmap();
     setParams(configs, time, variable);

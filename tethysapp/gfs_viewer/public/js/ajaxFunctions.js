@@ -16,7 +16,7 @@ function getChart() {
         coords[0] -= 360;
     }
     variable = $('#layers').val();
-    time = $("#times").val();
+    time = 'alltimes';              //time = $("#times").val();
     data = {
         coords: coords,         // list in the format [lat, lon]
         variable: variable,     // shortcode name of the variable
@@ -37,7 +37,7 @@ function getChart() {
 
 function getBounds() {
     variable = $('#layers').val();
-    time = $("#times").val();
+    time = 'alltimes';                 //time = $("#times").val();
     data = {
         variable: variable,
         time: time,

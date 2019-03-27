@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 //  Load initial map data as soon as the page is ready
     variable = $('#layers').val();
-    time = $("#times").val();
+    time = 'alltimes';                //time = $("#times").val();
     color = $('#colors').val();
     setParams(configs, time, variable);
     newLayer(variable, color);

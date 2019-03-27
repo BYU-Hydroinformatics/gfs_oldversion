@@ -22,11 +22,11 @@ def ts_plot(data):
         path = os.path.join(data_dir, 'raw')
         files = os.listdir(path)
         files.sort()
-    else:
-        path = os.path.join(data_dir, 'raw')
-        allfiles = os.listdir(path)
-        files = [nc for nc in allfiles if nc.startswith("GLDAS_NOAH025_M.A" + str(tperiod))]
-        files.sort()
+    #else:
+    #    path = os.path.join(data_dir, 'raw')
+    #    allfiles = os.listdir(path)
+    #    files = [nc for nc in allfiles if nc.startswith("GLDAS_NOAH025_M.A" + str(tperiod))]
+    #    files.sort()
 
     # delete Mac's hidden .DS_Store file inside data directory
     path = os.path.join(data_dir, 'raw')
@@ -51,9 +51,13 @@ def ts_plot(data):
     for nc in files:
         # set the time value for each file
         dataset = netCDF4.Dataset(path + '/' + nc, 'r')
-        t_value = (dataset['time'].__dict__['units'])  #['begin_date'])
-        t_step = datetime.datetime.strptime(t_value, "%Y%m%d")
+        t_value = (dataset['time'].__dict__['units'])
+        t_value = t_value[12:]
+        t_step = datetime.datetime.strptime(t_value, "%Y-%m-%d %H:%M:%S")
+        t_step = t_step + datetime.timedelta(hours=float(dataset['time'][:]))
+        print(t_step)
         t_step = calendar.timegm(t_step.utctimetuple()) * 1000
+
         for time, var in enumerate(dataset['time'][:]):
             # get the value at the point
             val = float(dataset[variable][0, adj_lat_ind, adj_lon_ind].data)

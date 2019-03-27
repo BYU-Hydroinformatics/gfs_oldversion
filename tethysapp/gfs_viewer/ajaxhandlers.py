@@ -39,18 +39,18 @@ def getBounds(request):
     data = ast.literal_eval(request.body)
     print(data)
     variable = data['variable']
-    time = data['time']
+    time = 'alltimes'             #time = data['time']
     response_object = {}
 
     if time == 'alltimes':
         path = os.path.join(thredds_data_dir, 'raw')
         files = os.listdir(path)
         files.sort()
-    else:
-        path = os.path.join(thredds_data_dir, 'raw')
-        allfiles = os.listdir(path)
-        files = [nc for nc in allfiles if nc.startswith("GLDAS_NOAH025_M.A" + str(time))]
-        files.sort()
+    #else:
+    #    path = os.path.join(thredds_data_dir, 'raw')
+    #   allfiles = os.listdir(path)
+    #    files = [nc for nc in allfiles if nc.startswith("GLDAS_NOAH025_M.A" + str(time))]
+    #    files.sort()
 
     minimum = 1000000
     maximum = -1000000
