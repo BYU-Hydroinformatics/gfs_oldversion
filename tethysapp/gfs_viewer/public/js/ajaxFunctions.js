@@ -9,12 +9,13 @@ function getChart() {
 
 //  Compatibility if user picks something out of normal bounds
     coords = drawnItems.toGeoJSON()['features'][0]['geometry']['coordinates'];
-    if (coords[0] < -180) {
+    if (coords[0] < 0) {   //if (coords[0] < -180) {
         coords[0] += 360;
     }
-    else if(coords[0] > 180) {
+    else if(coords[0] > 360) {    //else if(coords[0] > 180) {
         coords[0] -= 360;
     }
+
     variable = $('#layers').val();
     time = 'alltimes';              //time = $("#times").val();
     data = {
@@ -65,7 +66,7 @@ function getConfigs() {
     $.ajax({
         async: false,
         url:'/apps/gfs-viewer/getConfigs/',
-        data: 'give me ur data',
+        data: 'give me your data',
         dataType: 'json',
         contentType: "application/json",
         method: 'POST',

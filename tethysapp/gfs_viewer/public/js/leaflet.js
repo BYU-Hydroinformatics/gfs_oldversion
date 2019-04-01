@@ -72,7 +72,7 @@ function newLayer(variable, color) {
     wmsLayer = L.tileLayer.wms(url, {
         layers: variable,
         useCache: true,
-        //crossOrigin: true,
+        crossOrigin: false,
         format: 'image/png',
         transparent: true,
         BGCOLOR:'0x000000',

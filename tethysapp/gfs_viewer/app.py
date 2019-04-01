@@ -8,7 +8,7 @@ class GfsViewer(TethysAppBase):
 
     name = 'GFS Viewer'
     index = 'gfs_viewer:home'
-    icon = 'gfs_viewer/images/globe.png'
+    icon = 'gfs_viewer/images/gfs_logo.png'
     package = 'gfs_viewer'
     root_url = 'gfs-viewer'
     color = '#002366'
