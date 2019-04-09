@@ -1,13 +1,12 @@
 boundaries = {
-/*    alltimes2: {'Tair_f_inst': [233, 317], 'Albedo_inst': [4, 82], 'AvgSurfT_inst': [226, 319], 'CanopInt_inst': [0, 1],
-           'ECanop_tavg': [0, 143], 'ESoil_tavg': [0, 186], 'Evap_tavg': [-1, 1], 'LWdown_f_tavg': [122, 490],
-           'Lwnet_tavg': [-161, 46], 'PotEvap_tavg': [-3, 1001], 'Psurf_f_inst': [47070, 104635], 'Qair_f_inst': [0, 1],
-           'Qg_tavg': [-31, 44], 'Qh_tavg': [-89, 257], 'Qle_tavg': [-3, 232], 'Qs_acc': [0, 14], 'Qsb_acc': [0, 12],
-           'Qsm_acc': [0, 5], 'Rainf_f_tavg': [0, 1], 'Rainf_tavg': [0, 1], 'RootMoist_inst': [2, 923],
-           'SWE_inst': [0, 121743], 'SoilTMP0_10cm_inst': [232, 319], 'SWdown_f_tavg': [0, 398],
-           'SnowDepth_inst': [0, 305], 'Snowf_tavg': [0, 1], 'Swnet_tavg': [0, 347], 'Tveg_tavg': [0, 167],
-           'Wind_f_inst': [0, 17]},*/
-    alltimes: {'tp': [0, 25]}
+    alltimes: {'tp': [0, 25], 't': [202, 339], '4lftx': [-11.5, 27.7], 'acpcp': [0, 25], 'al': [0, 87.4], 'cape': [0, 2500],
+        'cfrzr': [0, 1], 'ci': [0, 1], 'cicep': [0, 1], 'cin': [-757, 0], 'cpofp': [-50, 100], 'crain': [0, 1],
+        'csnow': [0, 1], 'dlwrf': [-76, 450], 'dswrf': [0, 900], 'fldcp': [0, 0.4], 'gflux': [-230, 150], 'gust': [0, 34],
+        'hindex': [2, 6], 'hpbl': [17.3, 4000], 'landn': [0, 1], 'lftx': [-12.5, 43.2], 'lhtfl': [-119.7, 400],
+        'lsm': [0, 1], 'orog': [-236.5, 5000], 'pevpr': [-28.5, 2500], 'sde': [0, 2], 'sdwe': [0, 100],
+        'shtfl': [-193.2, 400], 'sp': [47801.5, 103827.1], 'SUNSD': [0, 21600], 'u-gwd': [-10, 12.5], 'uflx': [-1.9, 2.4],
+        'ulwrf': [115, 630], 'uswrf': [0, 500], 'v-gwd': [-6, 10], 'vflx': [-1.8, 2.1], 'vis': [0, 24100], 'watr': [0, 35],
+        'wilt': [0, 0.4]}
 }
 
 // old function for setting zoom of the map. ignored because the

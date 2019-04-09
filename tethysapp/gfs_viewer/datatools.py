@@ -42,15 +42,8 @@ def ts_plot(data):
     nc_lons = dataset['lon'][:]
     nc_lats = dataset['lat'][:]
 
-    print(coords)
-
     adj_lon_ind = (numpy.abs(nc_lons - coords[0])).argmin()
     adj_lat_ind = (numpy.abs(nc_lats - coords[1])).argmin()
-
-    print(adj_lat_ind)
-    print(adj_lon_ind)
-    print(nc_lats.argmin())
-    print(nc_lons.argmin())
 
     units = dataset[variable].__dict__['units']
     dataset.close()
@@ -69,7 +62,6 @@ def ts_plot(data):
         for time, var in enumerate(dataset['time'][:]):
             # get the value at the point
             val = float(dataset[variable][0, adj_lat_ind, adj_lon_ind].data)
-            #print(val)
             values.append((t_step, val))
         dataset.close()
 
