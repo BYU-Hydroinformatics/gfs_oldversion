@@ -26,7 +26,7 @@ def gfs_variables():
         'Wind Speed (Gust)': 'gust',
         'Haines Index': 'hindex',
         'Planetary Boundary Layer Height': 'hpbl',
-        'Land-Sea Coverage (Nearest Neighbor) [Land=1, Sea=0]': 'landn',
+        #'Land-Sea Coverage (Nearest Neighbor) [Land=1, Sea=0]': 'landn',
         'Surface Lifted Index': 'lftx',
         'Latent Heat Net Flux': 'lhtfl',
         'Land Cover [Land=1, Sea=0]': 'lsm',
